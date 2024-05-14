@@ -17,11 +17,11 @@ This Python project enables control of a needle insertion rig equipped with the 
 ## Project Structure
 
 `
-├── main_app.py          # Main application file  
-├── lib/                 # Library folder  
-│   ├── __init__.py  
-│   └── stageController.py # Stage controller module  
-└── Display.py           # Display module  
+├── main_app.py          # Main application file <br />
+├── lib/                 # Library folder <br />
+│   ├── __init__.py <br />
+│   └── stageController.py # Stage controller module <br />
+└── Display.py           # Display module <br />
 `
 
 ## Requirements
