@@ -8,10 +8,10 @@ Python app to control a needle insertion rig
 
 This Python project enables control of a needle insertion rig equipped with the following components:
 
-- Thorlabs Motorized Translation Stages: Three stages (X-axis, Y-axis and Z-axis).
+- Thorlabs Motorised Translation Stages: Three stages (X-axis, Y-axis and Z-axis).
 - Kinesis® K-Cube™ Brushed DC Servo Motor Controllers: Three controllers for the motorised stages.
-- mbed K64F Board: Main controller board.
-- Mikroe Arduino Uno Click Shield: Interface board for Arduino Uno Click modules.
+- mbed K64F Board: Data acquisition board.
+- Mikroe Arduino Uno Click Shield: Interface board for mbed K64F with Mikroe Click modules.
 - Mikroe ADC 18 Click Board: Analog-to-digital converter board for multi-channel differential measurements.
 
 ## Project Structure
