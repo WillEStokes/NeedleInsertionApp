@@ -45,4 +45,4 @@ Run main_app.py
 ## Functionality
 - Control Interface: Provides controls for each axis (X, Y, Z) including homing, setting velocity, and moving by a specified distance.
 - Sequence Management: Create, load, and save sequences of motions including movements and pauses.
-- Logging: Logs sequence execution and status.
+- Logging: Logs FT sensor measurements and encoder positions.
