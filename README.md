@@ -18,11 +18,13 @@ This Python project enables control of a needle insertion rig equipped with the 
 
 
 ```
-├── main_app.py          # Main application file
-├── lib/                 # Library folder
-│   ├── __init__.py
-│   └── stageController.py # Stage controller module
-└── Display.py           # Display module
+├── main_app.py               # Main application file
+├── lib/                      # Library folder
+│   ├── K64F.py               # K64F interface module
+│   └── stageController.py    # Linear stage interface module
+└── src/                      # Source folder
+    ├── needleInsertionApp.py # User interface for stage control and file IO
+    └── Display.py            # Data display module
 ```
 
 ## Requirements
