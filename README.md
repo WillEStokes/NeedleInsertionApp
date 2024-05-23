@@ -1,10 +1,10 @@
 # NeedleInsertionApp
 
-Python app to control a bespoke needle insertion rig.
+Python app to control a bespoke needle insertion test system.
 
 ## Needle Insertion Rig Control
 
-This Python project enables control of a needle insertion rig equipped with the following components:
+This Python project enables control of a bespoke needle insertion test system, equipped with the following components:
 
 - Thorlabs Motorised Translation Stages: Three stages (X-axis, Y-axis and Z-axis).
 - Kinesis® K-Cube™ Brushed DC Servo Motor Controllers: Three controllers for the motorised stages.
