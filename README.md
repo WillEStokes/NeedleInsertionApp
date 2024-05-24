@@ -17,10 +17,10 @@ This Python project enables control of a bespoke needle insertion test system, e
 ```
 ├── main_app.py               # Main application file
 ├── lib/                      # Library folder
-│   ├── K64F.py               # K64F interface module
+│   ├── K64F.py               # K64F interface module and data logging
 │   └── stageController.py    # Linear stage interface module
 └── src/                      # Source folder
-    ├── needleInsertionApp.py # User interface for stage control and file IO
+    ├── needleInsertionApp.py # User interface for configuring stage control and file IO
     └── Display.py            # Data display module
 ```
 
