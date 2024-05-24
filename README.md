@@ -1,6 +1,6 @@
 # NeedleInsertionApp
 
-Python app to control a bespoke needle insertion test system.
+PyQt6 app to control a bespoke needle insertion test system.
 
 ## Needle Insertion Rig Control
 
