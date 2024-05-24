@@ -33,7 +33,9 @@ This Python project enables control of a bespoke needle insertion test system, e
 
 Clone the repository:
 
-`git clone https://github.com/WillEStokes/NeedleInsertionApp.git`
+```
+git clone https://github.com/WillEStokes/NeedleInsertionApp.git
+```
 
 ## Usage
 
