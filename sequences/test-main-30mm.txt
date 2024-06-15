@@ -1,0 +1,3 @@
+Z_Stage Velocity: 2.0, Distance: 30.0
+Pause Time: 5.0
+Z_Stage Velocity: 2.0, Distance: -30.0

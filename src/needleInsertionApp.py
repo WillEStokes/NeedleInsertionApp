@@ -1,3 +1,4 @@
+import ctypes
 import sys
 import time
 import multiprocessing
@@ -291,14 +292,20 @@ def run_Display(logging_queue):
     Display.main(logging_queue)
 
 def main():
-    logging_queue = multiprocessing.Queue()
-    signal = multiprocessing.Process(target=run_Display, args=(logging_queue,))
-    signal.start()
-    
-    app = QApplication(sys.argv)
-    window = MainWindow(signal, logging_queue)
-    window.show()
-    sys.exit(app.exec())
+    ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000002) # Prevents computer from sleeping
+
+    try:
+        logging_queue = multiprocessing.Queue()
+        signal = multiprocessing.Process(target=run_Display, args=(logging_queue,))
+        signal.start()
+        
+        app = QApplication(sys.argv)
+        window = MainWindow(signal, logging_queue)
+        window.show()
+        sys.exit(app.exec())
+
+    finally:
+        ctypes.windll.kernel32.SetThreadExecutionState(0x80000000) # Resets computer sleep settings
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

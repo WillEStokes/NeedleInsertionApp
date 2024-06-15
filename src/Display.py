@@ -14,7 +14,8 @@ class MainWindow(QMainWindow):
         self.setGeometry(100, 100, 800, 600)
 
         # Data initialisation
-        self.data_labels = {'fx', 'fy', 'fz', 'tx', 'ty', 'tz'}
+        # self.data_labels = {'fx', 'fy', 'fz', 'tx', 'ty', 'tz'}
+        self.data_labels = ['fx', 'fy', 'fz', 'tx', 'ty', 'tz']
         self.data = tuple([0] * 9)
 
         # Chart
@@ -26,7 +27,7 @@ class MainWindow(QMainWindow):
         # Axes
         self.axisY = QValueAxis()
         self.axisY.setTitleText("Force/Torque")
-        self.axisY.setRange(-14, 14)
+        self.axisY.setRange(-20, 20)
         self.chart.addAxis(self.axisY, Qt.AlignmentFlag.AlignLeft)
         self.axisX = QValueAxis()
         self.axisX.setRange(0, 1)
