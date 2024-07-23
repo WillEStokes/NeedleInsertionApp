@@ -110,7 +110,7 @@ class MainWindow(QWidget):
 
         self.sequence_name_input = QLineEdit()
         self.sequence_name_input.setPlaceholderText("Sequence Name")
-        self.sequence_name_input.setMaximumWidth(200)
+        self.sequence_name_input.setMaximumWidth(300)
         self.sequence_name = ""
 
         self.run_sequence_button = QPushButton("Run Sequence")
